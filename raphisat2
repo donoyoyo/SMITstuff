@@ -1,0 +1,35 @@
+
+#                                reports alignments tailored for transcript assemblers
+#                       reports alignments tailored specifically for cufflinks
+
+#/home/common/hisat2-2.1.0/hisat2 --max-intronlen 10000 -X 1000 -5 10 -3 100 -x /home/common/hisat2-2.1.0/indexes/hs2mmCCMP2099v1 \
+#-1 IGHS_RNAseq_2099A_CGATGT_Micromonas_I677_L1_R1.fastq.bz2 \
+# -2 IGHS_RNAseq_2099A_CGATGT_Micromonas_I677_L1_R2.fastq.bz2 \
+
+
+#hisat2 --phred33 --no-mixed --min-intronlen 30 --max-intronlen 1010 -p 5 -x /ysm-gpfs/home/tda9/annotations/hisat2Index/saccer3 -1 "$OUTPUTname".fastq -2 "$OUTPUTname2".fastq -S "$OUTPUTname3".sam
+
+/home/common/hisat2-2.1.0/hisat2 --no-mixed --max-intronlen 10000  -x /home/common/hisat2-2.1.0/indexes/sc3/genome \
+-1 1A_S50_R1_filt2.fastq \
+-2 1A_S50_R2_filt2.fastq \
+   --novel-splicesite-outfile novel1A_50.bed --fr -S hs1A_50.sam  
+
+/home/common/hisat2-2.1.0/hisat2 --no-mixed --max-intronlen 10000  -x /home/common/hisat2-2.1.0/indexes/sc3/genome \
+-1 1B_S51_R1_filt2.fastq \
+-2 1B_S51_R2_filt2.fastq \
+   --novel-splicesite-outfile novel1B_51.bed --fr -S hs1B_51.sam  
+
+/home/common/hisat2-2.1.0/hisat2 --no-mixed --max-intronlen 10000  -x /home/common/hisat2-2.1.0/indexes/sc3/genome \
+-1 1C_S52_R1_filt2.fastq \
+-2 1C_S52_R2_filt2.fastq \
+   --novel-splicesite-outfile novel1C_52.bed --fr -S hs1C_52.sam  
+
+/home/common/hisat2-2.1.0/hisat2 --no-mixed --max-intronlen 10000  -x /home/common/hisat2-2.1.0/indexes/sc3/genome \
+-1 1D_S53_R1_filt2.fastq \
+-2 1D_S53_R2_filt2.fastq \
+--novel-splicesite-outfile novel1D_53.bed --fr -S hs1D_53.sam  
+
+
+
+
+

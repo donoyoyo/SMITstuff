@@ -1,0 +1,5 @@
+/home/common/bbmap/clumpify.sh dedupe=t in1=../Cleveland/mjo_001A_S50_L005_R1_001.fastq in2=../Cleveland/mjo_001A_S50_L005_R2_001.fastq out1=1A_S50_R1.fastq  out2=1A_S50_R2.fastq 
+/home/common/bbmap/clumpify.sh dedupe=t in1=../Cleveland/mjo_001B_S51_L005_R1_001.fastq in2=../Cleveland/mjo_001B_S51_L005_R2_001.fastq out1=1B_S51_R1.fastq  out2=1B_S51_R2.fastq 
+/home/common/bbmap/clumpify.sh dedupe=t in1=../Cleveland/mjo_001C_S52_L005_R1_001.fastq in2=../Cleveland/mjo_001C_S52_L005_R2_001.fastq out1=1C_S52_R1.fastq  out2=1C_S52_R2.fastq 
+/home/common/bbmap/clumpify.sh dedupe=t in1=../Cleveland/mjo_001D_S53_L005_R1_001.fastq in2=../Cleveland/mjo_001D_S53_L005_R2_001.fastq out1=1D_S53_R1.fastq  out2=1D_S53_R2.fastq 
+
