@@ -14,7 +14,7 @@ that also has the raw fastq if we have to deposit them.
 bbmap clumpify was used to remove duplicates and clump the reads
 that script is here (essentially default parameters)
 http://intron.ucsc.edu/jen/april_23/clump
-bbmap version 37.90, that comes with clumpify so i think its the same
+bbmap version 37.90
 
 3.)
 Cutadapt v1.11 was used to remove adapters and filter reads based on
