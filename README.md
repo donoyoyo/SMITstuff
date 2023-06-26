@@ -59,6 +59,7 @@ http://intron.ucsc.edu/jen/april_23/SMIT_accessory_files.zip
 Those annotation files anotate gene,intron and terminal exon length.
 
 The R script to generate the splicing files is here
+
 http://intron.ucsc.edu/jen/april_23/2SMIT_processing_local.R
 
 as described in Tara's paper. This produced the files with the
