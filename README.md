@@ -9,12 +9,12 @@ link  here
 
 http://intron.ucsc.edu/jen/jan2019/Cleveland/
 
-that also has the raw fastq if we have to deposit them.
+That also has the raw fastq if we have to deposit them.
 
 
 2.)
-bbmap clumpify was used to remove duplicates and clump the reads
-that script is here (essentially default parameters)
+bbmap clumpify was used to remove duplicates and clump the reads.
+That script is here (essentially default parameters)
 
 http://intron.ucsc.edu/jen/april_23/clump
 
@@ -24,7 +24,7 @@ bbmap version 37.90
 Cutadapt v1.11 was used to remove adapters and filter reads based on
 presence of adapter, error rate, minimum length,
 minimum overlap between read and adapter.
-the script for that is here
+The script for that is here
 
 http://intron.ucsc.edu/jen/april_23/cutadapt_smSMIT2.pl
 
@@ -43,11 +43,11 @@ Alignment statistics are here
 
 http://intron.ucsc.edu/jen/april_23/alignment_stats
 
-the script for that is here
+The script for that is here
 
 http://intron.ucsc.edu/jen/april_23/raphisat2
 
-the aligned reads are here
+The aligned reads are here
 
 http://intron.ucsc.edu/jen/april_23/alignedreads/
 
@@ -98,10 +98,11 @@ between conditions for each gene for the region from start of signal to 200 nt a
 
 wilcoxon two sample test is also called Mann-Whitney
 
-that is the last step with the recent plots
+That is the last step with the recent plots
 
 http://intron.ucsc.edu/jen/april_23/finorm2200/
 
-this being the script
+This being the script
 
 http://intron.ucsc.edu/jen/april_23/finorm2200/normedaauc200.pl
+
