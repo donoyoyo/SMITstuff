@@ -6,51 +6,71 @@ Starting from the Cleveland dataset (the raw fastq files),
 preliminary QC was done with fastqc on the raw fastq files.
 
 link  here
+
 http://intron.ucsc.edu/jen/jan2019/Cleveland/
-that also has the raw fastq if we have to deposit them.
+
+That also has the raw fastq if we have to deposit them.
 
 
 2.)
-bbmap clumpify was used to remove duplicates and clump the reads
-that script is here (essentially default parameters)
+bbmap clumpify was used to remove duplicates and clump the reads.
+That script is here (essentially default parameters)
+
 http://intron.ucsc.edu/jen/april_23/clump
+
 bbmap version 37.90
 
 3.)
 Cutadapt v1.11 was used to remove adapters and filter reads based on
 presence of adapter, error rate, minimum length,
 minimum overlap between read and adapter.
-the script for that is here
+The script for that is here
+
 http://intron.ucsc.edu/jen/april_23/cutadapt_smSMIT2.pl
+
 with parameters
+
 -O 8 -n 2 -m 23 -e 0.11
+
 --discard-untrimmed
 
 
 4.)
 Alignment was done using  hisat2-2.1.0
 with parameters --no-mixed --max-intronlen 10000 and aligned to sacCer3
+
 Alignment statistics are here
+
 http://intron.ucsc.edu/jen/april_23/alignment_stats
-the script for that is here
+
+The script for that is here
+
 http://intron.ucsc.edu/jen/april_23/raphisat2
-the aligned reads are here
+
+The aligned reads are here
+
 http://intron.ucsc.edu/jen/april_23/alignedreads/
 
 5.)
 The intron annotations were untouched from Tara and are contained here
+
 http://intron.ucsc.edu/jen/april_23/SMIT_accessory_files.zip
+
 Those annotation files anotate gene,intron and terminal exon length.
 
 The R script to generate the splicing files is here
+
 http://intron.ucsc.edu/jen/april_23/2SMIT_processing_local.R
+
 as described in Tara's paper. This produced the files with the
 splicing values as well as these plots
+
 http://intron.ucsc.edu/jen/jan2019/processed_data100/smit_curves/panels/
 
 As well as the SMIT_accessory_files, the gene list of 62 relevent genes that were
 in the study is input.
 that is here
+
 http://intron.ucsc.edu/jen/april_23/genelist62
 
 The input is the sacCer3 gene annotations , mapped read bed files , primed genes
@@ -63,7 +83,11 @@ The raw splice value is then normalized using the position, insert length and le
 
 The script is in this one SMIT_accessory_files/smitData.R
 
+In particular, 
 
+SMIT_accessory_files/smitData.R includes R data shaping, mapping, and positional R scripts 
+
+SMIT_accessory_files/commonFunctions.R includes mostly statistical R functions
 
 6.)
 The splicing numbers were binned by 20 nt,  plotted and used to
@@ -74,7 +98,11 @@ between conditions for each gene for the region from start of signal to 200 nt a
 
 wilcoxon two sample test is also called Mann-Whitney
 
-that is the last step with the recent plots
+That is the last step with the recent plots
+
 http://intron.ucsc.edu/jen/april_23/finorm2200/
-this being the script
+
+This being the script
+
 http://intron.ucsc.edu/jen/april_23/finorm2200/normedaauc200.pl
+
