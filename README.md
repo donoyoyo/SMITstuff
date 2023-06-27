@@ -9,7 +9,7 @@ link  here
 
 http://intron.ucsc.edu/jen/jan2019/Cleveland/
 
-That also has the raw fastq if we have to deposit them.
+That contains the raw fastq which has been depositted at:
 
 
 2.)
