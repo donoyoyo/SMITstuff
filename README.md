@@ -9,8 +9,8 @@ link  here
 
 http://intron.ucsc.edu/jen/jan2019/Cleveland/
 
-This contains the raw fastq which has been depositted .
-
+This contains the raw fastq which has been deposited.
+https://www.ncbi.nlm.nih.gov/sra/PRJNA975902
 
 2.)
 bbmap clumpify was used to remove duplicates and clump the reads.
