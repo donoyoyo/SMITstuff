@@ -1,6 +1,7 @@
 # SMITstuff
 0.)
-Based on https://pubmed.ncbi.nlm.nih.gov/33113357/
+
+Algorithm and analysis started from https://pubmed.ncbi.nlm.nih.gov/33113357/
 
 Widespread Transcriptional Readthrough Caused by Nab2 Depletion Leads to Chimeric Transcripts with Retained Introns
 
